@@ -2132,33 +2132,6 @@ atJ5vU0BNoTjBoRjL4SjzJxXyIgbZCQcMtJaOi70vV1fkqi/SAYR9F+FdOyBdMTZYhvHhnSoCAl51cvF
         <Field Name="PSH_Customer_PO">
           <DataField>PSH_Customer_PO</DataField>
         </Field>
-        <Field Name="BOL_BillToAddress">
-          <DataField>BOL_BillToAddress</DataField>
-        </Field>
-        <Field Name="BOL_BillToAddress2">
-          <DataField>BOL_BillToAddress2</DataField>
-        </Field>
-        <Field Name="BOL_BillToCity">
-          <DataField>BOL_BillToCity</DataField>
-        </Field>
-        <Field Name="BOL_BillToContact">
-          <DataField>BOL_BillToContact</DataField>
-        </Field>
-        <Field Name="BOL_BillToCountry">
-          <DataField>BOL_BillToCountry</DataField>
-        </Field>
-        <Field Name="BOL_BillToCustomer">
-          <DataField>BOL_BillToCustomer</DataField>
-        </Field>
-        <Field Name="BOL_BillToName">
-          <DataField>BOL_BillToName</DataField>
-        </Field>
-        <Field Name="BOL_BillToState">
-          <DataField>BOL_BillToState</DataField>
-        </Field>
-        <Field Name="BOL_BillToZipCode">
-          <DataField>BOL_BillToZipCode</DataField>
-        </Field>
         <Field Name="PSL_Line_No">
           <DataField>PSL_Line_No</DataField>
         </Field>

@@ -1,7 +1,7 @@
 report 50104 "DarlingPostedShip"
 {
     DefaultLayout = RDLC;
-    //RDLCLayout = 'Darlington_Posted_Shipment.rdl';
+    RDLCLayout = './layouts/Darlington_Posted_Shipment.rdlc';
     Caption = 'Darlington Posted Shipment';
 
     dataset
@@ -182,7 +182,7 @@ report 50104 "DarlingPostedShip"
                 trigger OnAfterGetRecord()
                 begin
                     if ("Sales Shipment Line".Type = 2) then ItemUnitOfMeasure.Get("No.", 'PL');
-                    TotalPallets := Round((Quantity / ItemUnitOfMeasure."Qty. per Unit of Measure"), 1, '>');
+                    TotalPallets := (Quantity / ItemUnitOfMeasure."Qty. per Unit of Measure");
                     if ("Sales Shipment Line".Type = 2) then ItemUnitOfMeasure.Get("No.", 'CS');
                     TotalWeight := ("Quantity (Base)" * ItemUnitOfMeasure.Weight);
                 end;

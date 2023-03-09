@@ -1,7 +1,7 @@
 report 50105 "DarlingPacking"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './layouts/Darlington_Posted_Shipment.rdlc';
+    RDLCLayout = './layouts/DarlingtonPacking.rdlc';
     Caption = 'Darlington Posted Shipment';
 
     dataset
@@ -161,8 +161,9 @@ report 50105 "DarlingPacking"
         }
     }
     var
+        ItemUnitOfMeasure: Record "Item Unit of Measure";
         TotalWeight: Decimal;
         TotalQty: Decimal;
         TotalPallets: Decimal;
-        ItemUnitOfMeasure: Record "Item Unit of Measure";
+
 }

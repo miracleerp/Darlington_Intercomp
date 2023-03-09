@@ -8,7 +8,7 @@
             "breakOnError": true,
             "breakOnRecordWrite": false,
             "environmentType": "Sandbox",
-            "environmentName": "Sandbox12132022",
+            "environmentName": "DARLINGTON_BOL_TAG",
             "tenant": "7eb13320-1106-4456-a493-26e908efd99f",
             "launchBrowser": true,
             "enableSqlInformationDebugger": true,
