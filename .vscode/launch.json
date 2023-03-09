@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+         {
+            "name": "Sandbox",
+            "type": "al",
+            "request": "launch",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox12132022",
+            "tenant": "7eb13320-1106-4456-a493-26e908efd99f",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
+        }
+    ]
+}

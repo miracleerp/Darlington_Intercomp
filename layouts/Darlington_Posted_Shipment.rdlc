@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="PSH_Order_No">
+          <DataField>PSH_Order_No</DataField>
+        </Field>
+        <Field Name="PSH_Posting_Date">
+          <DataField>PSH_Posting_Date</DataField>
+        </Field>
+        <Field Name="PSH_Document_Date">
+          <DataField>PSH_Document_Date</DataField>
+        </Field>
+        <Field Name="PSH_Requested_Delivery_Date">
+          <DataField>PSH_Requested_Delivery_Date</DataField>
+        </Field>
+        <Field Name="PSH_Promised_Delivery_Date">
+          <DataField>PSH_Promised_Delivery_Date</DataField>
+        </Field>
+        <Field Name="PSH_Shipment_Date">
+          <DataField>PSH_Shipment_Date</DataField>
+        </Field>
+        <Field Name="PSH_Sales_Order_Num">
+          <DataField>PSH_Sales_Order_Num</DataField>
+        </Field>
+        <Field Name="PSH_Sales_Quote_Num">
+          <DataField>PSH_Sales_Quote_Num</DataField>
+        </Field>
+        <Field Name="PSH_External_Doc_Num">
+          <DataField>PSH_External_Doc_Num</DataField>
+        </Field>
+        <Field Name="PSH_SalesPerson">
+          <DataField>PSH_SalesPerson</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_Cust">
+          <DataField>PSH_Sell_to_Cust</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_Cust_Name">
+          <DataField>PSH_Sell_to_Cust_Name</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_Address">
+          <DataField>PSH_Sell_to_Address</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_City">
+          <DataField>PSH_Sell_to_City</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_Contact">
+          <DataField>PSH_Sell_to_Contact</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_Zip">
+          <DataField>PSH_Sell_to_Zip</DataField>
+        </Field>
+        <Field Name="PSH_Sell_to_County">
+          <DataField>PSH_Sell_to_County</DataField>
+        </Field>
+        <Field Name="PSH_PackageTracking">
+          <DataField>PSH_PackageTracking</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_Cust_Name">
+          <DataField>PSH_Ship_to_Cust_Name</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_Address">
+          <DataField>PSH_Ship_to_Address</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_City">
+          <DataField>PSH_Ship_to_City</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_Contact">
+          <DataField>PSH_Ship_to_Contact</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_Zip">
+          <DataField>PSH_Ship_to_Zip</DataField>
+        </Field>
+        <Field Name="PSH_Ship_to_County">
+          <DataField>PSH_Ship_to_County</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_Cust_Name">
+          <DataField>PSH_Bill_to_Cust_Name</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_Address">
+          <DataField>PSH_Bill_to_Address</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_City">
+          <DataField>PSH_Bill_to_City</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_Contact">
+          <DataField>PSH_Bill_to_Contact</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_Zip">
+          <DataField>PSH_Bill_to_Zip</DataField>
+        </Field>
+        <Field Name="PSH_Bill_to_County">
+          <DataField>PSH_Bill_to_County</DataField>
+        </Field>
+        <Field Name="PSH_Customer_PO">
+          <DataField>PSH_Customer_PO</DataField>
+        </Field>
+        <Field Name="PSL_Line_No">
+          <DataField>PSL_Line_No</DataField>
+        </Field>
+        <Field Name="PSL_Line_Order_No">
+          <DataField>PSL_Line_Order_No</DataField>
+        </Field>
+        <Field Name="PSL_Item_Number">
+          <DataField>PSL_Item_Number</DataField>
+        </Field>
+        <Field Name="PSL_Item_Description">
+          <DataField>PSL_Item_Description</DataField>
+        </Field>
+        <Field Name="PSL_Item_UOM">
+          <DataField>PSL_Item_UOM</DataField>
+        </Field>
+        <Field Name="PSL_Item_Qty_Shipped_Not_Inv">
+          <DataField>PSL_Item_Qty_Shipped_Not_Inv</DataField>
+        </Field>
+        <Field Name="PSL_Item_Qty_Shipped_Not_InvFormat">
+          <DataField>PSL_Item_Qty_Shipped_Not_InvFormat</DataField>
+        </Field>
+        <Field Name="PSL_Item_Qty_Base">
+          <DataField>PSL_Item_Qty_Base</DataField>
+        </Field>
+        <Field Name="PSL_Item_Qty_BaseFormat">
+          <DataField>PSL_Item_Qty_BaseFormat</DataField>
+        </Field>
+        <Field Name="PSL_Item_Type">
+          <DataField>PSL_Item_Type</DataField>
+        </Field>
+        <Field Name="PSL_Item_Qty">
+          <DataField>PSL_Item_Qty</DataField>
+        </Field>
+        <Field Name="PSL_Item_QtyFormat">
+          <DataField>PSL_Item_QtyFormat</DataField>
+        </Field>
+        <Field Name="TotalPallets">
+          <DataField>TotalPallets</DataField>
+        </Field>
+        <Field Name="TotalPalletsFormat">
+          <DataField>TotalPalletsFormat</DataField>
+        </Field>
+        <Field Name="TotalWeight">
+          <DataField>TotalWeight</DataField>
+        </Field>
+        <Field Name="TotalWeightFormat">
+          <DataField>TotalWeightFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,36 @@
+{
+  "id": "f6321d0c-e64f-4dc1-a30f-5c39c7538821",
+  "name": "DarlingtonInterCompany",
+  "publisher": "Impact Networking",
+  "version": "1.0.3.1",
+  "runtime": "8.0",
+  "target": "Cloud",
+  "application": "21.0.0.0",
+  "platform": "21.0.0.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": false
+  },
+  "dependencies": [
+    {
+      "id": "0a0ae274-590b-4a05-9032-cecf03671617",
+      "name": "Darlington_AddMods",
+      "version": "1.0.0.0",
+      "publisher": "Impact Networking"
+    },
+    {
+      "id": "2bc11767-b6ca-4b21-8dd2-9fd23b3e2966",
+      "name": "Darlington_MOD",
+      "version": "1.0.0.0",
+      "publisher": "Impact Networking"
+    }
+    
+  ],
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 70000
+    }
+  ]
+}
