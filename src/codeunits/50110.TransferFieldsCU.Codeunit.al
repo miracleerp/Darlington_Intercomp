@@ -1,4 +1,4 @@
-codeunit 50110 TransferFieldsCU
+codeunit 50110 "TransferFieldsCU"
 {
     Permissions = TableData "Purch. Inv. Header"=rm;
     TableNo = "Purch. Inv. Header";

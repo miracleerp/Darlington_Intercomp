@@ -1,4 +1,4 @@
-pageextension 50123 PostedSalesInListEx extends "Posted Sales Invoices"
+pageextension 50122 "SalesOrderListEx" extends "Sales Order List"
 {
     layout
     {

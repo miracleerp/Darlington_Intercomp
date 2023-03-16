@@ -1,4 +1,4 @@
-codeunit 50111 PrintItemTrackingCU
+codeunit 50111 "PrintItemTrackingCU"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Shipment + Print", 'OnAfterCode', '', false, false)]
     local procedure printItemTrackingLines()

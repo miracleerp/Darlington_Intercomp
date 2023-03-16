@@ -1,4 +1,4 @@
-tableextension 50106 PurchaseHeaderEx extends "Purchase Header"
+tableextension 50108 "PurchInvHeaderEx" extends "Purch. Inv. Header"
 {
     fields
     {
@@ -53,6 +53,15 @@ tableextension 50106 PurchaseHeaderEx extends "Purchase Header"
             Caption = 'Customer_PO_Number';
             ExtendedDatatype = URL;
         }
+        field(50110; BakeWeek; Integer)
+        {
+            Caption = 'Bake Week';
+        }
     }
-    var myInt: Integer;
+    var trigger OnInsert()
+    var
+        TransFieldCU: Codeunit TransferFieldsCU;
+    begin
+        TransferFields(Rec);
+    end;
 }

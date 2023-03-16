@@ -1,4 +1,4 @@
-pageextension 60001 WhrhsePostNPrint extends "Warehouse Shipment"
+pageextension 60001 "WhrhsePostNPrint" extends "Warehouse Shipment"
 {
     actions
     {

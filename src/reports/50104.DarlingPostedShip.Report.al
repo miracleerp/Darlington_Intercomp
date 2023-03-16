@@ -108,38 +108,34 @@ report 50104 "DarlingPostedShip"
             column(PSH_Customer_PO; Customer_PO)
             {
             }
-            dataitem("Sales Header"; "Sales Header")
+            column(BOL_BillToAddress; BOL_BillToAddress)
             {
-                DataItemLink = "No." = field("Order No.");
-
-                column(BOL_BillToAddress; BOL_BillToAddress)
-                {
-                }
-                column(BOL_BillToAddress2; BOL_BillToAddress2)
-                {
-                }
-                column(BOL_BillToCity; BOL_BillToCity)
-                {
-                }
-                column(BOL_BillToContact; BOL_BillToContact)
-                {
-                }
-                column(BOL_BillToCountry; BOL_BillToCountry)
-                {
-                }
-                column(BOL_BillToCustomer; BOL_BillToCustomer)
-                {
-                }
-                column(BOL_BillToName; BOL_BillToName)
-                {
-                }
-                column(BOL_BillToState; BOL_BillToState)
-                {
-                }
-                column(BOL_BillToZipCode; BOL_BillToZipCode)
-                {
-                }
             }
+            column(BOL_BillToAddress2; BOL_BillToAddress2)
+            {
+            }
+            column(BOL_BillToCity; BOL_BillToCity)
+            {
+            }
+            column(BOL_BillToContact; BOL_BillToContact)
+            {
+            }
+            column(BOL_BillToCountry; BOL_BillToCountry)
+            {
+            }
+            column(BOL_BillToCustomer; BOL_BillToCustomer)
+            {
+            }
+            column(BOL_BillToName; BOL_BillToName)
+            {
+            }
+            column(BOL_BillToState; BOL_BillToState)
+            {
+            }
+            column(BOL_BillToZipCode; BOL_BillToZipCode)
+            {
+            }
+
             //Shipment Lines
             dataitem("Sales Shipment Line"; "Sales Shipment Line")
             {
